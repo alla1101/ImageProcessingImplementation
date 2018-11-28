@@ -1,0 +1,13 @@
+clear;
+clc;
+v=imread('/home/alla/Documents/Master In IT/Semester 1/Advanced Image Processing/imageRepo/DIP3E_CH01_Original_Images/DIP3E_Original_Images_CH01/Fig0101(1921 digital image).tif');
+cd=double(v);
+c0=mod(cd,2);
+c1=mod(floor(cd/2),2);
+c2=mod(floor(cd/4),2);
+c3=mod(floor(cd/8),2);
+c4=mod(floor(cd/16),2);
+c5=mod(floor(cd/32),2);
+c6=mod(floor(cd/64),2);
+c7=mod(floor(cd/128),2);
+imtool(im2uint8(c7));
