@@ -31,20 +31,14 @@ IM_Outlier=imcomplement(outlier(IM,0.7));
 information
 imhist(IM_N);
 % Printing image without noise
-A1=imtool(IM);
-set(A1,'NumberTitle','off','Name','Normal Image');
+A1=imtool(IM);set(A1,'NumberTitle','off','Name','Normal Image');
 % Printing Image With Noise
-A2=imtool(IM_N);
-set(A2,'NumberTitle','off','Name','Noised Image');
+%A2=imtool(IM_N);set(A2,'NumberTitle','off','Name','Noised Image');
 % Prining Image after Averaging
-A3=imtool(IM_Avg);
-set(A3,'NumberTitle','off','Name','Averaged Noised Image');
+%A3=imtool(IM_Avg);set(A3,'NumberTitle','off','Name','Averaged Noised Image');
 % Printing Image after Median filter
-A4=imtool(IM_Med);
-set(A4,'NumberTitle','off','Name','Median filter on Noised Image');
+%A4=imtool(IM_Med);set(A4,'NumberTitle','off','Name','Median filter on Noised Image');
 % Printing Image after Rank-Order filter
-A5=imtool(IM_Rank);
-set(A5,'NumberTitle','off','Name','Rank-Order filter on Noised Image');
+%A5=imtool(IM_Rank);set(A5,'NumberTitle','off','Name','Rank-Order filter on Noised Image');
 % Printing image after being outliered
-A6=imtool(IM_Outlier);
-set(A6,'NumberTitle','off','Name','Outlier filter on noised image');
+A6=imtool(IM_Outlier);set(A6,'NumberTitle','off','Name','Outlier filter on noised image');

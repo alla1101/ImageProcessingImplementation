@@ -12,3 +12,4 @@ imtool(im_l);
 log=fspecial('log',13,2);
 x=edge(im,'zerocross',log);
 imtool(x);
+imtool(im);
