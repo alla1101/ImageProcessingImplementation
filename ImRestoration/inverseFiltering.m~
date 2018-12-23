@@ -22,10 +22,10 @@ w1=fftshift(fft2(IMB_O))./b;
 fftshow(ifft2(w1),'abs');
 %%
 % Deblur it using weiner filtering
-K=0.1;
-fIM=IMF;
-w1x=fIM.*(abs(b).^2./(abs(b).^2+K)./b );
-fftshow(ifft2(w1x),'abs');
+K=0.001;
+
+w1=FNPIM*(abs(mf).^2./(abs(mf).^2+K)./mf );
+fftshow(ifft2(w1),'abs');
 %%
 % Printing results
 information
