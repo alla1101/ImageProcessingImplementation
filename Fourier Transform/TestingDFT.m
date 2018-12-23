@@ -1,4 +1,6 @@
 clear;clc;
+addpath(genpath('/home/alla/ImageProcessing/GeneralFunctions'));
+
 %% 
 % creating picture
 

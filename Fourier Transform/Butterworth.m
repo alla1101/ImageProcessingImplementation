@@ -1,4 +1,5 @@
 clear;clc;
+addpath(genpath('/home/alla/ImageProcessing/GeneralFunctions'));
 %% Butterworth filtering
 %
 %%
@@ -12,7 +13,7 @@ bl=lbutter(CameraMan,15,1);
 bh=hbutter(CameraMan,15,1);
 % Gaussian Filter
 g1=mat2gray(fspecial('gaussian',256,50));
-gH=1-h1;
+gH=1-g1;
 %%
 % DFT
 fCM=fftshift(fft2(CameraMan));

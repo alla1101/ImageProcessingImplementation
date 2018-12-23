@@ -1,4 +1,5 @@
 clear;clc;
+addpath(genpath('/home/alla/ImageProcessing/GeneralFunctions'));
 %% Cleaning Salt&Pepper Noise
 %
 %%
